@@ -47,6 +47,7 @@ a:hover, a:focus {
 .About {
   margin: 50px 0;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .About .Image {
@@ -88,9 +89,13 @@ a:hover, a:focus {
 }
 
 .Footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   background-color: #333;
   color: #666;
   padding: 20px 0;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
