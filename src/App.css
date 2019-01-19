@@ -1,7 +1,7 @@
 .HeroImage {
-  min-height: 600px;
+  height: 600px;
   padding: 50px 0px;
-
+  background-size: cover;
 }
 
 .Container {
@@ -18,10 +18,6 @@
   max-width: 100%;
 }
 
-.About {
-  margin: 50px 0;
-  text-align: center
-}
 
 h1 {
   color: #D9E021;
@@ -39,9 +35,87 @@ a, a:hover, a:focus, a:active {
   border-radius: 10px;
   text-decoration: none;
   transition: background 0.5s;
+  display: block;
+  margin-bottom: 20px;
 
 }
 
 a:hover, a:focus {
   background: rgb(179, 184, 32)
+}
+
+.About {
+  margin: 50px 0;
+  overflow: hidden;
+}
+
+.About .Image {
+  float: left;
+  width: 30%;
+  background-color: #D9E021; /* #29abe2; */
+  height: 300px;
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+}
+
+.About .Image svg {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.About .Content {
+  float: left;
+  text-align: left;
+  width: 60%;
+  padding: 0 5%;
+  background-color: #eee;
+  min-height: 300px;
+}
+
+.About .Content p {
+  margin: 40px 0;
+  color: #666;
+  font-size: 18px;
+
+}
+.About .Content h1 {
+  margin: 40px 0;
+  color: #D9E021;
+  font-size: 32px;
+  
+}
+
+.Footer {
+  background-color: #333;
+  color: #666;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .HeroImage {
+    max-height: 400px;
+  }
+  .About .Image {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .About .Content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .HeroImage {
+    max-height: 200px;
+  }
+  .LogoImage {
+    width: 150px;
+  }
+  .About .Content h1 {
+    font-size: 24px;
+  }
 }

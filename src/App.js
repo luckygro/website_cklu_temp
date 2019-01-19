@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTools } from '@fortawesome/free-solid-svg-icons'
 
 import logo from './images/logo.png';
 import eyecatcher from './images/schoolchildren.jpg'
 
 import './App.css';
+
+library.add(faTools)
+
 
 var eyecatcherBackground = {
   backgroundImage: "url(" + eyecatcher + ")"
@@ -17,17 +23,27 @@ class App extends Component {
         <header className="HeroImage" style={eyecatcherBackground}>
           <div className="Container">
             <div className="LogoImage" >
-              <img src={logo} ></img>
+              <img alt="Kinder in der Schule des Hilfswerks" src={logo} ></img>
             </div>
           </div>
         </header>
         <section className="About">
           <div className="Container">
-            <h1>Willkommen auf der Website des Christlichen Kinderhilfswerk Luwero - Uganda</h1>
-            <p>Unsere neue Website befindet sich gerade im Aufbau. Wir bitten Sie um Verständnis!</p>
-            <a href="http://www.luwero-community-projects.de" >Informationen auf unserer bisherigen Website</a>
-          </div>    
+            <div className="Image">
+              <FontAwesomeIcon icon="tools" />
+            </div>
+            <div className="Content">
+              <h1>Willkommen auf der Website des Christlichen Kinderhilfswerk Luwero - Uganda e.V.</h1>
+              <p>Unsere neue Website befindet sich gerade im Aufbau. Wir bitten Sie um Verständnis!</p>
+              <a href="http://www.luwero-community-projects.de" >Besuchen Sie unsere bisherigen Website</a>
+            </div>   
+            </div> 
         </section>
+        <footer className="Footer">
+          <div className="Container">
+            <span>Christliches Kinderhilfswerk Luwero - Uganda e.V.</span>
+          </div>
+        </footer>
 
       </div>
     );
