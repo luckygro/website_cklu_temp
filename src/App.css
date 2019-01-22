@@ -75,6 +75,10 @@ a:hover, a:focus {
   min-height: 300px;
 }
 
+.About .Content a svg {
+  margin-right: 0.5em;
+}
+
 .About .Content p {
   margin: 40px 0;
   color: #666;
