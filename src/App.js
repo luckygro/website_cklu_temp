@@ -25,7 +25,7 @@ class App extends Component {
         <header className="HeroImage" style={eyecatcherBackground}>
           <div className="Container">
             <div className="LogoImage" >
-              <img alt="Kinder in der Schule des Hilfswerks" src={logo} ></img>
+              <img alt="Logo Christliches Kinderhilfswerk Luwero - Uganda e.V." src={logo} ></img>
             </div>
           </div>
         </header>
